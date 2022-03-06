@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="frontend/style.css" />
+    <title>Week-2-Task</title>
+  </head>
+  <body class="test">
+    <div class="container">
+      <div class="container-content">
+        <div class="contact-us">
+          <h3>
+            Contact <br />
+            <span class="underline">Us</span>
+          </h3>
+        </div>
+        <div>
+          <form action="#">
+            <input type="text" placeholder="NAME" id="input-field" /><br />
+            <input type="text" placeholder="EMAIL" id="input-field-2" /><br />
+            <input
+              type="tel"
+              maxlength="11"
+              placeholder="PHONE NUMBER"
+              id="input-field-3"
+            /><br />
+            <input
+              type="text"
+              class="text-area"
+              placeholder="MESSAGE"
+              id="input-field-4"
+            />
+          </form>
+          <button class="action-button" id="cancel-btn" onclick="cancelExec()">
+            CANCEL
+          </button>
+          <button class="action-button" id="send-btn" onclick="sendExec()">
+            SEND
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./frontend/script.js"></script>
+</html>
