@@ -12,7 +12,7 @@ function cancelExec() {
 
 function sendExec() {
   let newMessage = inputSection4.value;
-  var output = Number(inputSection3.value);
+  var output = inputSection3.value;
 
   //console.log(typeof(output)=== Number)
   if (
@@ -22,7 +22,7 @@ function sendExec() {
     inputSection4.value === ""
   ) {
     window.alert("All input boxes must be filled!");
-  } else if (typeof output !== Number) {
+  } else if (isNaN(output)) {
     window.alert("Phone number field must only contain numbers");
   } else if (newMessage.length > 100) {
     window.alert("Message field cannot have more than 100 characters");
